@@ -1,28 +1,26 @@
 package ex3;
 
-import ex1.Ex1;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex3 extends Ex1 {
+public class Ex3 extends Utils {
+    private int n1;
     private int n2;
 
-    public Ex3(Scanner s) {
-        super(s);
-        System.out.printf("Digite outro número inteiro: ");
-        n2 = s.nextInt();
+    public Ex3(){
+        n1 = getInt("Digite o primeiro número: ");
+        n2 = getInt("Digite o segundo número: ");
+        this.swap();
+    }
+    private void swap(){
+        n1 = n2 - n1;
+        n2 = n2 - n1;
+        n1 = n1 + n2;
     }
 
     @Override
     public String toString() {
-        StringBuilder s = new StringBuilder("O ");
-        int comparator = comparator(n2);
-        if (comparator == -1)
-            s.append("segundo é maior");
-        else if (comparator == 1)
-            s.append("primeiro é maior");
-        else
-            s.append("primeiro é igual ao segundo");
-        return s.toString();
+        return new StringBuilder("n1 = " + n1 + "\nn2 = " + n2).toString();
     }
 }

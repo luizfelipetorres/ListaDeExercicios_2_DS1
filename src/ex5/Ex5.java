@@ -1,30 +1,23 @@
 package ex5;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
-public class Ex5 {
-    private int age;
-
-    public int getAge() {
-        return age;
+public class Ex5 extends Utils {
+    private double cotacao;
+    private double dolar;
+    public Ex5(){
+        dolar = getDouble("Quantos dolares vc tem na carteira? ");
+        cotacao = getDouble("Qual é o valor do dólar hoje? ");
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public double real(){
+        return dolar * cotacao;
     }
 
-    public Ex5(Scanner s){
-        System.out.printf("Digite a sua idade: ");
-        age = s.nextInt();
-    }
-
-    private boolean isAdult(){
-        if (age >= 18)
-            return true;
-        return false;
-    }
     @Override
     public String toString() {
-        return isAdult() ? "Maior de idade" : "Menor de idade";
+        return String.format("US$ %.2f equivale a R$ %.2f", dolar, real());
     }
 }

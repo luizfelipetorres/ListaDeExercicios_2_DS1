@@ -1,17 +1,22 @@
 package ex6;
 
-import ex5.Ex5;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex6 extends Ex5 {
+public class Ex6 extends Utils {
+    private double celsius;
 
-    public Ex6(Scanner s) {
-        super(s);
-        while (getAge() <= 0 || getAge() > 150){
-            System.out.println("Idade inválida! Tente novamente");
-            System.out.printf("Digite a sua idade: ");
-            setAge(s.nextInt());
-        }
+    public Ex6() {
+        this.celsius = getDouble("Digite a temperatura em celsius");
+    }
+
+    private double fahrenheit(){
+        return (9 * celsius + 160) / 5;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%.2f graus Celsius equivale a %.2f fahrenheit", celsius, fahrenheit());
     }
 }

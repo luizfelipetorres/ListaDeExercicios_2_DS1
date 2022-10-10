@@ -1,27 +1,20 @@
 package ex1;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
 /**
  * A partir de dois números decimais e efetuar as quatros operações matemáticas básicas,
  * apresentando ao final os resultados obtidos
  */
-public class Ex1 {
+public class Ex1 extends Utils {
     private double n1;
     private double n2;
 
-    public Ex1(double n1, double n2) {
-        super();
-        this.n1 = n1;
-        this.n2 = n2;
-    }
-
     public Ex1() {
-        Scanner s = new Scanner(System.in);
-        System.out.println("Digite o primeiro número: ");
-        this.n1 = s.nextInt();
-        System.out.println("Digite o segundo número: ");
-        this.n2 = s.nextInt();
+        this.n1 = getInt("Digite o primeiro numero: ");
+        this.n2 = getInt("Digite o segundo número: ");
     }
 
     public double sum() {

@@ -1,22 +1,25 @@
 package ex4;
 
-import ex1.Ex1;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex4 extends Ex1 {
-    public Ex4(Scanner s) {
-        super(s);
+public class Ex4 extends Utils {
+    private double vCompra;
+    private double pDesconto;
+
+    public Ex4() {
+        vCompra = getDouble("Digite o valor da compra: ");
+        pDesconto = getDouble("Digite o percentual de desconto: ");
     }
 
-    public boolean isPair(){
-        if (n % 2 == 0)
-            return true;
-        return false;
+    private double valorFinal() {
+        return vCompra - (vCompra * pDesconto);
     }
 
     @Override
     public String toString() {
-        return n + (isPair() ? " É par" : " É impar");
+        return new String().format("O valor R$ %.2f com %.2f de desconto é de R$ %.2f",
+                vCompra, pDesconto, valorFinal());
     }
 }
