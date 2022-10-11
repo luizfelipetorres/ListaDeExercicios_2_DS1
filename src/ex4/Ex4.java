@@ -1,12 +1,14 @@
 package ex4;
 
 import ex1.Ex1;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex4 extends Ex1 {
-    public Ex4(Scanner s) {
-        super(s);
+public class Ex4 extends Utils {
+    private int n;
+    public Ex4() {
+        n = getInt("Digite um número inteiro: ");
     }
 
     public boolean isPair(){

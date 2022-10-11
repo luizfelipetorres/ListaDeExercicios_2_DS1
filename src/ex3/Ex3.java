@@ -1,16 +1,25 @@
 package ex3;
 
 import ex1.Ex1;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex3 extends Ex1 {
+public class Ex3 extends Utils {
     private int n2;
+    private int n1;
 
-    public Ex3(Scanner s) {
-        super(s);
-        System.out.printf("Digite outro número inteiro: ");
-        n2 = s.nextInt();
+    public Ex3() {
+        n1 = getInt("Digite um número inteiro: ");
+        n2 = getInt("Digite outro número inteiro: ");
+    }
+
+    protected int comparator(int comparator){
+        if (n1 > comparator)
+            return 1;
+        else if (n1 < comparator)
+            return -1;
+        return 0;
     }
 
     @Override

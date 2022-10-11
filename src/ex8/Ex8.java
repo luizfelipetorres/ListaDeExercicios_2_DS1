@@ -1,16 +1,16 @@
 package ex8;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
-public class Ex8 {
+public class Ex8 extends Utils {
     private double peso;
     private double altura;
 
-    public Ex8(Scanner s) {
-        System.out.printf("Digite seu peso: ");
-        peso = s.nextDouble();
-        System.out.printf("Digite sua altura: ");
-        altura = s.nextDouble();
+    public Ex8() {
+        peso = getDouble("Digite seu peso: ");
+        altura = getDouble("Digite sua altura: ");
     }
 
     private double imc() {

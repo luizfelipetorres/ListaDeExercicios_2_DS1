@@ -1,13 +1,14 @@
 package ex1;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
-public class Ex1 {
+public class Ex1 extends Utils {
     protected int n;
 
-    public Ex1(Scanner s) {
-        System.out.printf("Digite um numero inteiro: ");
-        this.n = s.nextInt();
+    public Ex1() {
+        this.n = getInt("Digite um numero inteiro: ");
     }
 
     /**
@@ -15,13 +16,7 @@ public class Ex1 {
      * @param comparator o numero que será comparado
      * @return 1 se n > comparator, -1 se n < comparator e 0 se n == comparator
      */
-    protected int comparator(int comparator){
-        if (n > comparator)
-            return 1;
-        else if (n < comparator)
-            return -1;
-        return 0;
-    }
+
 
     protected String result (){
         if (n > 0)

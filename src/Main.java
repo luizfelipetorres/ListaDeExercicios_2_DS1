@@ -29,28 +29,28 @@ public class Main {
 
         switch (escolha) {
             case 1:
-                System.out.println(new Ex1(scanner));
+                System.out.println(new Ex1());
                 break;
             case 2:
-                System.out.println(new Ex2(scanner));
+                System.out.println(new Ex2());
                 break;
             case 3:
-                System.out.println(new Ex3(scanner));
+                System.out.println(new Ex3());
                 break;
             case 4:
-                System.out.println(new Ex4(scanner));
+                System.out.println(new Ex4());
                 break;
             case 5:
-                System.out.println(new Ex5(scanner));
+                System.out.println(new Ex5());
                 break;
             case 6:
-                System.out.println(new Ex6(scanner));
+                System.out.println(new Ex6());
                 break;
             case 7:
-                System.out.println(new Ex7(scanner));
+                System.out.println(new Ex7());
                 break;
             case 8:
-                System.out.println(new Ex8(scanner));
+                System.out.println(new Ex8());
                 break;
 
         }

@@ -1,13 +1,14 @@
 package ex7;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
-public class Ex7 {
+public class Ex7 extends Utils {
     private double metros;
 
-    public Ex7(Scanner s) {
-        System.out.println("Digite um valor em metros: ");
-        metros = s.nextFloat();
+    public Ex7() {
+        metros = getDouble("Digite um valor em metros: ");
     }
 
     private double km() {

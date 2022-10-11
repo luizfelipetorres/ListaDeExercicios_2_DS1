@@ -1,13 +1,15 @@
 package ex2;
 
 import ex1.Ex1;
+import utils.Utils;
 
 import java.util.Scanner;
 
-public class Ex2 extends Ex1 {
+public class Ex2 extends Utils {
+    private int n;
 
-    public Ex2(Scanner s) {
-        super(s);
+    public Ex2() {
+        n = getInt("Digite um número: ");
     }
 
     private String result(int comparado){

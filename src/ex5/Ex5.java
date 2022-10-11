@@ -1,9 +1,15 @@
 package ex5;
 
+import utils.Utils;
+
 import java.util.Scanner;
 
-public class Ex5 {
+public class Ex5 extends Utils {
     private int age;
+
+    public Ex5(){
+        age = getInt("Digite a sua idade: ");
+    }
 
     public int getAge() {
         return age;
@@ -11,11 +17,6 @@ public class Ex5 {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public Ex5(Scanner s){
-        System.out.printf("Digite a sua idade: ");
-        age = s.nextInt();
     }
 
     private boolean isAdult(){
