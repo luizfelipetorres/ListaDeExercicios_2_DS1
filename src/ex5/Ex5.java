@@ -20,9 +20,7 @@ public class Ex5 extends Utils {
     }
 
     private boolean isAdult(){
-        if (age >= 18)
-            return true;
-        return false;
+        return (age >= 18) ? true : false;
     }
     @Override
     public String toString() {

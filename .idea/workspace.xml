@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf58a24f-0e6b-41ef-8678-6b9bd76841dd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ex1/Ex1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex1/Ex1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ex2/Ex2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex2/Ex2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex3/Ex3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex3/Ex3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ex4/Ex4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ex4/Ex4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,22 +33,18 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lfarias/Documents/Workspace/lista2/ListaDeExercicios_2_DS1&quot;
   }
 }</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ListaDeExercicios_2_DS1" />
+      <module name="ListaDeExercicios_1_DS1" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

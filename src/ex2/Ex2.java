@@ -22,6 +22,6 @@ public class Ex2 extends Utils {
 
     @Override
     public String toString() {
-        return String.format("n %s 10", result(10), n);
+        return String.format("%d %s 10", n, result(10));
     }
 }
